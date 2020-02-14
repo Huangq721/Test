@@ -1,0 +1,44 @@
+一、本地仓库
+
+1、首次进入Git  base  Here，需要登录信息
+  git  config  --global user.name “Huangq721”
+  git  config  --global  user.email  “422145378@qq.com”
+
+2、进入到所要创建库的文件路径下：
+  cd  d:/
+
+3、创建仓库并进入，新目录huangq
+ mkdir huangq
+ cd  huangq
+
+4、初始化仓库
+ git  init
+【初始化后，文件夹下会有一个.git的隐藏文件夹】
+
+5、添加文件到缓存区
+ git  add  文件名
+ git  add  .            【添加当前目录到缓存区】
+
+6、提交至版本库
+  git  commit  -m "注释内容"
+【查看当前状态： git  status，是否有下载文件分支？】
+
+7、查看版本日志
+  git  log           【查看上一次更新操作日志的详情】
+  git  log --pretty=oneline           【查看上次更新操作日志的列表信息】
+  git  reflog        【查看更新日志历史记录】
+
+8、回退版本
+  git  reset  --hard  提交编号（commit  id）
+
+二、远程仓库
+
+1、创建空目录
+  mkdir   TeshProject
+
+2、克隆线上仓库到本地
+  git  clone   线上仓库地址       【克隆到指令所定位的地址】
+
+3、提交暂存区/缓存区
+  git  add  .
+
